@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "QuranCompanion",
   "resources": {
-    "hash": "sha256-ylddvadWkZNPFFgoxV41Pf7j+vuxJj57r+wr01KlSkE=",
+    "hash": "sha256-Gs/QiPitiEU9U8C27MqrFmPJxIgX2Hy/kLl7/JpBsIY=",
     "jsModuleNative": {
       "dotnet.native.8.0.20.x60n2ud70a.js": "sha256-D0bzod5lwwSzPR43JC8TTCcZKw+3jIHOk8CZFCRj5is="
     },
@@ -46,7 +46,7 @@
       "MimeMapping.wasm": "sha256-CMXcRIg84k7AstbhcD8rbnPKy2wa/gmsBD8gBgZP1c8=",
       "netstandard.wasm": "sha256-bPH+0331vF6GJ4TxUxn7LTyhSuxvzNRuJBaLUoLXC9Q=",
       "Newtonsoft.Json.wasm": "sha256-GlXMWKvDs45M2pACoR3Y4Qh8mcrOZGljqmvJY+6JZ5s=",
-      "QuranCompanion.wasm": "sha256-af8ARVDxdBrNO929zxYcUxiJ0yCmrELA5kr1QojHwzs=",
+      "QuranCompanion.wasm": "sha256-xan/Q9xfP3uou1j+iswe7a/2zXxJmuOIQM9Y7uzqcpc=",
       "Supabase.Core.wasm": "sha256-jUEh1mM6mkGdyQrEwowAbpQ8R148PZIAUIOXn0mrgIA=",
       "Supabase.Functions.wasm": "sha256-i3baKTpUA4voBHgpG1KCEXhOQom7BsRz3N4FCywsZ6k=",
       "Supabase.Gotrue.wasm": "sha256-fIDLwe2YAl/vphQoUtljCM5aRD5nbL3EXYlszJRLyfw=",
