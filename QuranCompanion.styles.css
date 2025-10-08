@@ -172,10 +172,59 @@
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.toggle-btn-show:hover[b-t86empd6q7] {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(24, 90, 157, 0.4);
+/* ensure watched rules come after active to avoid being overridden */
+.video-item[b-t86empd6q7] {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.4rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
+
+/* active (currently playing) */
+.video-item.active[b-t86empd6q7] {
+  background: white;
+  color: #185a9d;
+  font-weight: bold;
+}
+
+/* watched (distinct visual for watched videos) - placed AFTER .active in CSS so it wins */
+.video-item.watched[b-t86empd6q7] {
+  background: rgb(32 2 2 / 35%);
+  color: #083f2f;                /* darker green-ish text to match theme */
+  border-left: 4px solid #e73d07;/* accent bar */
+  font-style: normal;
+}
+
+/* when item is both active and watched, combine styles */
+.video-item.active.watched[b-t86empd6q7] {
+  /* stronger outline to show it's both playing and watched */
+  background: linear-gradient(90deg, rgba(67,206,162,0.12), rgba(24,90,157,0.08));
+  color: #185a9d;
+  border-left-color: #185a9d;
+  box-shadow: 0 6px 16px rgba(24, 90, 157, 0.12);
+}
+
+/* small checkmark on the right */
+.watched-icon[b-t86empd6q7] {
+  float: right;
+  font-size: 0.98rem;
+  color: #43cea2;
+  margin-left: 8px;
+}
+
+/* hover effect */
+.video-item:hover[b-t86empd6q7] {
+  transform: translateX(3px);
+  background: rgba(255,255,255,0.25);
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
