@@ -4,12 +4,21 @@
 /* Container with gradient background */
 .video-note-container[b-w0pldbf1x3] {
   min-height: 100vh;
-  padding: 40px;
-  background: linear-gradient(135deg, #43cea2, #185a9d); /* same as login */
+  padding: 20px; /* smaller padding for smaller screens */
+  background: linear-gradient(135deg, #43cea2, #185a9d);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+/* Wrapper for row content */
+.video-note-wrapper[b-w0pldbf1x3] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
 }
 
 /* Video card */
@@ -19,11 +28,17 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 500px; /* grow/shrink responsively */
+  max-width: 650px;
 }
 
 .video-card:hover[b-w0pldbf1x3] {
   transform: translateY(-5px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+.video-card .ratio[b-w0pldbf1x3] {
+  aspect-ratio: 16 / 9;
 }
 
 /* Note card */
@@ -33,17 +48,23 @@
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
   padding: 1.5rem;
   animation: fadeInUp-b-w0pldbf1x3 0.6s ease;
+  flex: 1 1 400px; /* responsive growth/shrink */
+  max-width: 650px;
+  min-width: 300px;
 }
 
+/* Note card body */
 .note-card-body[b-w0pldbf1x3] {
   display: flex;
   flex-direction: column;
 }
 
+/* Note title */
 .note-title[b-w0pldbf1x3] {
   margin-bottom: 1.2rem;
   font-weight: 700;
   color: #185a9d;
+  font-size: 1.2rem;
 }
 
 /* Inputs styled similar to login page */
@@ -82,6 +103,47 @@
 @keyframes fadeInUp-b-w0pldbf1x3 {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .video-note-wrapper[b-w0pldbf1x3] {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-card[b-w0pldbf1x3], .note-card[b-w0pldbf1x3] {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+  .video-note-container[b-w0pldbf1x3] {
+    padding: 15px;
+  }
+
+  .video-card[b-w0pldbf1x3], .note-card[b-w0pldbf1x3] {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .note-title[b-w0pldbf1x3] {
+    font-size: 1.1rem;
+  }
+
+  .btn-gradient[b-w0pldbf1x3] {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-check[b-w0pldbf1x3] {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 /* /Components/VideoSideBarComponent.razor.rz.scp.css */
 /* Sidebar wrapper */
