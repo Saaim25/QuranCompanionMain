@@ -542,3 +542,102 @@ main[b-f3tcp7ggcq] {
     min-height: 260px;
   }
 }
+/* /Pages/Home.razor.rz.scp.css */
+/* Page title */
+.dashboard-title[b-ucs6yf0dr3] {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #26382f; /* soft green tone for readability */
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* Loading message */
+.loading-text[b-ucs6yf0dr3] {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Progress card grid */
+.progress-grid[b-ucs6yf0dr3] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+/* Individual card */
+.progress-card[b-ucs6yf0dr3] {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.progress-card:hover[b-ucs6yf0dr3] {
+  transform: scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Username heading */
+.username[b-ucs6yf0dr3] {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #185a9d;
+  margin-bottom: 1rem;
+}
+
+/* Progress bar container */
+.progress-bar[b-ucs6yf0dr3] {
+  width: 100%;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 1rem;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+/* Progress bar fill */
+.progress-fill[b-ucs6yf0dr3] {
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  transition: width 0.6s ease-in-out;
+}
+
+/* Progress count */
+.progress-count[b-ucs6yf0dr3] {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+/* Progress percentage */
+.progress-percent[b-ucs6yf0dr3] {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Highlighted percentage */
+.percent-value[b-ucs6yf0dr3] {
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .dashboard-title[b-ucs6yf0dr3] {
+    font-size: 1.6rem;
+  }
+
+  .progress-card[b-ucs6yf0dr3] {
+    padding: 1rem;
+  }
+}
